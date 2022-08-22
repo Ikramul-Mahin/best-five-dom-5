@@ -1,7 +1,8 @@
 // calculate 1st button.
-document.getElementById('btn-calculate').addEventListener('click', function addFive(event) {
+document.getElementById('btn-calculate').addEventListener('click', function () {
     const getFootballers = getTextValue('player-number');
     const getPerPlayer = getInputValue('per-input');
+    console.log('clicked')
 
     const playerIntoMoney = getPerPlayer * getFootballers;
     setElementTextValue('player-expanse', playerIntoMoney);

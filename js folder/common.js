@@ -23,13 +23,9 @@ function addFive(element) {
     setElementTextValue('player-number', array.length);
     display(array)
 }
-
-
-
-
-
-
-
+// function disable(x) {
+//     x.disabled = true;
+// }
 
 
 function getInputValue(elementId) {
