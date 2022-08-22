@@ -16,18 +16,24 @@ function display(players) {
 
 function addFive(element) {
     const playerName = element.parentNode.children[0].innerText;
+    disable(element)
     const playerNameObj = {
         name: playerName
     }
     array.push(playerNameObj)
     setElementTextValue('player-number', array.length);
     display(array)
+    const find = array.length;
+    console.log(find)
+
 }
-// function disable(x) {
-//     x.disabled = true;
-// }
+
+function disable(x) {
+    x.disabled = true;
+}
 
 
+//index function
 function getInputValue(elementId) {
     const inputField = document.getElementById(elementId);
     const inputFieldString = inputField.value;
