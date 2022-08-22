@@ -1,12 +1,14 @@
 //1st-btn
 document.getElementById('btn-calculate').addEventListener('click', function () {
-
     const getFootballers = getTextValue('player-number');
     const getPerPlayer = getInputValue('per-input');
 
     const playerIntoMoney = getPerPlayer * getFootballers;
     setElementTextValue('player-expanse', playerIntoMoney);
 
+    if (isNaN(getPerPlayer)) {
+        alert('Give a number.')
+    }
 
 });
 
@@ -18,5 +20,9 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
     const finalTotal = manager + coach + lastCost;
     setElementTextValue('final-total', finalTotal);
+
+    if (isNaN(manager && coach)) {
+        alert('Give A Number.')
+    }
 
 })

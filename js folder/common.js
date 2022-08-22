@@ -15,23 +15,27 @@ function display(players) {
 }
 
 function addFive(element) {
-    const playerName = element.parentNode.children[0].innerText;
-    disable(element)
-    const playerNameObj = {
-        name: playerName
+    const getMax = getTextValue('player-number')
+    if (getMax < 5) {
+        const playerName = element.parentNode.children[0].innerText;
+        disable(element)
+        const playerNameObj = {
+            name: playerName
+        }
+        array.push(playerNameObj)
+        setElementTextValue('player-number', array.length);
+        display(array)
+        const find = array.length;
+
+    } else {
+        alert('Max Five Player Can Be Added.')
     }
-    array.push(playerNameObj)
-    setElementTextValue('player-number', array.length);
-    display(array)
-    const find = array.length;
-    console.log(find)
 
 }
 
 function disable(x) {
     x.disabled = true;
 }
-
 
 //index function
 function getInputValue(elementId) {
