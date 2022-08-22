@@ -28,3 +28,12 @@ header h1:hover {
     text-decoration: underline;
     transition: 0.5;
 }
+
+.card img {
+    height: 15rem;
+    width: 100%;
+}
+
+.players {
+    height: 78vh;
+}
