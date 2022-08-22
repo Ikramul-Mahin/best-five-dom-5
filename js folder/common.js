@@ -1,10 +1,8 @@
+
 const array = [];
 function display(players) {
     const tableBody = document.getElementById('selected-players');
     tableBody.innerHTML = '';
-
-
-
     for (let i = 0; i < players.length; i++) {
         const names = array[i].name;
         const tr = document.createElement('tr');
@@ -44,7 +42,7 @@ function getInputValue(elementId) {
 function getTextValue(textId) {
     const textValue = document.getElementById(textId);
     const textValueString = textValue.innerText
-    const getTextValue = parent(textValueString)
+    const getTextValue = parseInt(textValueString)
     return getTextValue;
 }
 function setElementTextValue(elementId, newValue) {
