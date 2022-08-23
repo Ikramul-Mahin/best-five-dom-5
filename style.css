@@ -21,13 +21,24 @@ header h1 {
     font-weight: 700;
     color: rgb(207, 102, 10);
     text-transform: uppercase;
-    text-shadow: 2, 2, 2, 0.6, ;
+
 }
+
 
 header h1:hover {
     text-decoration: underline;
     transition: 0.5;
 }
+
+header p {
+    text-align: center;
+    font-weight: 200;
+    width: 70%;
+    margin-left: 9rem;
+
+}
+
+
 
 .card img {
     height: 15rem;
@@ -36,4 +47,8 @@ header h1:hover {
 
 .players {
     height: 78vh;
+}
+
+.last-total p {
+    margin-bottom: 0;
 }
